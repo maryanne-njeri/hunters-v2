@@ -11,7 +11,7 @@
 <body class="font-sans" x-data="{ navbarOpen : false, scrolledFromTop : false }" 
     @scroll.window="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = false" 
     :class="{'overflow-auto' : !navbarOpen, 'overflow-hidden' : navbarOpen}">
-    <header class="fixed w-full flex items-center justify-between h-16 px-8 md:px-16 transition-all duration-200" 
+    <header class="fixed w-full flex items-center justify-between h-16 px-4 md:px-16 transition-all duration-200" 
         :class="{ 'h-16' : !scrolledFromTop, 'h-12' : scrolledFromTop, 'shadow-lg' : scrolledFromTop, 'bg-gray-700' : scrolledFromTop }">
         <div>
             <a href="index.html" class="has-tooltip">
@@ -48,7 +48,7 @@
     </header>
     <div class="pt-16 pb-12 w-full bg-no-repeat bg-center bg-cover bg-black h-1/4" 
         style="background-image: linear-gradient(rgba(8, 7, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/hero2.jpg);">
-        <div class="flex items-end px-8 md:px-16 text-white h-72">
+        <div class="flex items-end px-4 md:px-16 text-white h-72">
             <div class="space-y-6 text-left">
                 <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold sm:w-2/3 md:w-3/4">We create world-class software products</h2>
                 <p class="text-sm sm:text-md md:w-3/5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi dolores, odit aperiam dicta distinctio. Aliquam deserunt labore dolor provident!</p>
