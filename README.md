@@ -12,6 +12,9 @@
 - Responsive header
 > sticky and shrinkable header on scroll
 
+- Responsive hero header
+> The hero header will consist of a tech related image background
+
 - Team section
 > Will display user profile on mousing over user's respective avatar. Based on the hunter initiative being a flat organization, the user avatars (Team members) are placed on a horizontal line (signifies flat organization) with the head management's avatars appearing above the line and the rest team members below the line. The profile will contain Member's name, their role and a bio.
 
@@ -33,6 +36,7 @@
 > The list will show the progress of the project with the checked boxes being the completed features. This will help me to track my progress and as well help the colaborators to be updated on features completion.
 
 - [x] Responsive header
+- [x] Responsive hero header
 - [ ] Team section
 - [ ] Our story
 - [ ] About us
