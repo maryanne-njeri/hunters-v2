@@ -1,0 +1,30 @@
+{
+  "name": "hunters-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "alpinejs": "^3.4.2",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build styles.css -o css/styles.css",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maryanne-njeri/hunters-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maryanne-njeri/hunters-v2/issues"
+  },
+  "homepage": "https://github.com/maryanne-njeri/hunters-v2#readme"
+}
