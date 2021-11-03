@@ -15,6 +15,11 @@
 - Responsive hero header
 > The hero header will consist of a tech related image background
 
+- Our services
+> - User experience
+> - Sofware developmnet
+> - Web Design
+
 - Team section
 > Will display user profile on mousing over user's respective avatar. Based on the hunter initiative being a flat organization, the user avatars (Team members) are placed on a horizontal line (signifies flat organization) with the head management's avatars appearing above the line and the rest team members below the line. The profile will contain Member's name, their role and a bio.
 
