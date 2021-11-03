@@ -15,20 +15,20 @@
         :class="{ 'h-16' : !scrolledFromTop, 'h-12' : scrolledFromTop, 'shadow-lg' : scrolledFromTop, 'bg-gray-700' : scrolledFromTop }">
         <div>
             <a href="index.html" class="has-tooltip">
-                <img src="images/logo.png" alt="logo" class="h-8"
-                    :class="{ 'h-8' : !scrolledFromTop, 'h-6' : scrolledFromTop }"
+                <img src="images/logo.png" alt="logo" class="h-6 md:h-8"
+                    :class="{ 'h-6' : !scrolledFromTop, 'h-8' : scrolledFromTop }"
                 >
                 <span class='tooltip p-1 rounded text-xs transition duration-500 text-white bg-gray-700'>The Hunter Initiative</span>
             </a>
         </div>
         <nav>
-            <button class="md:hidden" @click="navbarOpen = ! navbarOpen">
+            <button class="md:hidden text-white" @click="navbarOpen = ! navbarOpen">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
-            <ul class="fixed left-0 right-0 min-h-screen space-y-4 p-4 transform transition duration-200
-                md:relative md:flex md:min-h-0 md:translate-x-0 md:space-y-0 md:space-x-6 md:p-0"
+            <ul class="fixed left-0 right-0 min-h-screen space-y-4 p-8 transform bg-gray-900 bg-opacity-80 transition duration-200
+                md:relative md:flex md:min-h-0 md:translate-x-0 md:space-y-0 md:space-x-6 md:p-0 md:bg-transparent"
                 :class="{ 'translate-x-0' : navbarOpen, 'translate-x-full': !navbarOpen}"
                 >
                 <li>
@@ -46,43 +46,16 @@
             </ul>
         </nav>
     </header>
-    <div class="pt-16 pb-12 w-full bg-no-repeat bg-center bg-cover bg-black" 
-        style="background-image: linear-gradient(rgba(8, 7, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/hero2.jpg); height: 80vh; width: auto;">
-        <div class="flex items-end px-8 md:px-16 text-white h-96">
+    <div class="pt-16 pb-12 w-full bg-no-repeat bg-center bg-cover bg-black h-1/4" 
+        style="background-image: linear-gradient(rgba(8, 7, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/hero2.jpg);">
+        <div class="flex items-end px-8 md:px-16 text-white h-72">
             <div class="space-y-6 text-left">
-                <h2 class="text-4xl md:text-5xl font-bold w-1/2">We create world-class sofware products</h2>
-                <p class="w-3/5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi dolores, odit aperiam dicta distinctio. Aliquam deserunt labore dolor provident!</p>
-                <button class="text-sm md:text-large bg-gray-900 px-4 py-2 rounded-md hover:bg-black-100">Learn more</button>
+                <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold sm:w-2/3 md:w-3/4">We create world-class software products</h2>
+                <p class="text-sm sm:text-md md:w-3/5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi dolores, odit aperiam dicta distinctio. Aliquam deserunt labore dolor provident!</p>
+                <button class="text-sm sm:text-large bg-gray-900 px-4 py-2 rounded-md hover:bg-black-100">Learn more</button>
             </div>
         </div>
     </div>
-    <div class="pt-20 px-8 md:px-16 flex items-center justify-center space-x-6" id="team">
-            <span class="border px-8 rounded-lg"></span>
-            <div>
-                <img src="images/njeri.jpg" alt="thumbnail" class="rounded-full h-20 w-20 -mb-10 border-4 border-gray-200">
-            </div>
-            <span class="border px-8 rounded-lg"></span>
-            <div>
-                <img src="images/njeri.jpg" alt="thumbnail" class="rounded-full h-20 w-20 -mt-10 border-4 border-gray-200">
-            </div>
-            <span class="border px-8 rounded-lg"></span>
-            <div>
-                <img src="images/njeri.jpg" alt="thumbnail" class="rounded-full h-20 w-20 -mb-10 border-4 border-gray-200">
-            </div>
-            <span class="border px-8 rounded-lg"></span>
-            <div>
-                <img src="images/njeri.jpg" alt="thumbnail" class="rounded-full h-20 w-20 -mt-10 border-4 border-gray-200">
-            </div>
-            <span class="border px-8 rounded-lg"></span>
-            <div class="">
-                <div class="absolute right-40 bottom-16 bg-gray-500 text-white p-6 w-64 rounded">
-                    <h3 class="font-semibold text-lg">Jane Doe</h3>
-                    <h3 class="font-semibold text-sm py-3"> <strong>Role :</strong> UX Designer</h3>
-                    <span class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero earum unde, rerum voluptatem fugiat fuga illum minima quae itaque nesciunt iusto, aperiam beatae iste dolorem culpa pariatur accusantium, consectetur delectus.</span>
-                </div>
-                <img src="images/njeri.jpg" alt="thumbnail" class="rounded-full h-20 w-20 -mb-10 border-4 border-gray-200">
-            </div>
-            <span class="border px-8 rounded-lg"></span
-    </div>
+    
 </body>
 </html>
