@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
             fontFamily: {
-        'sans': ['Helvetica', 'Roboto', 'Arial', 'sans-serif']
+        'bitter': 'Bitter',
+        'roboto': 'Roboto',
+        'averia-serif': 'Averia Serif Libre'
       }
     },
   },

@@ -9,7 +9,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <!-- x-data sets properties' states. False by default -->
-<body class="font-sans antialiased" x-data="{ navbarOpen : false, scrolledFromTop : false }"
+<body class="font-roboto antialiased" x-data="{ navbarOpen : false, scrolledFromTop : false }"
     @scroll.window="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = false" 
     :class="{'overflow-auto' : !navbarOpen, 'overflow-hidden' : navbarOpen}">
     <header class="fixed w-full flex items-center justify-between h-16 px-4 md:px-16 transition-all duration-200" 
@@ -18,7 +18,7 @@
         <div>
             <a href="index.html" class="has-tooltip">
                 <img src="images/logo.png" alt="logo" class="h-6 md:h-8"
-                    :class="{ 'h-6' : !scrolledFromTop, 'h-8' : scrolledFromTop }"
+                    :class="{ 'md:h-6' : !scrolledFromTop, 'md:h-8' : scrolledFromTop }"
                 >
                 <!-- The custom tooltip shows on hovering over the logo -->
                 <span class='tooltip p-1 rounded text-xs transition duration-500 text-white bg-gray-700'>The Hunter Initiative</span>
@@ -56,8 +56,8 @@
         style="background-image: linear-gradient(rgba(8, 7, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/hero2.jpg);">
         <div class="flex items-end px-4 md:px-16 text-white h-72">
             <div class="space-y-6 text-left">
-                <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold sm:w-2/3 md:w-3/4">We create world-class software products</h2>
-                <p class="text-sm sm:text-md font-thin tracking-wide md:w-3/5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi dolores, odit aperiam dicta distinctio. Aliquam deserunt labore dolor provident!</p>
+                <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold sm:w-2/3 md:w-3/4 font-averia-serif">We create world-class software products.</h2>
+                <p class="text-sm sm:text-md tracking-wide md:w-3/5 font-light font-roboto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi dolores, odit aperiam dicta distinctio. Aliquam deserunt labore dolor provident!</p>
                 <button class="
                     text-sm sm:text-large bg-white text-gray-700 font-semibold hover:bg-gray-700 
                     hover:text-white transition duration-200 px-4 py-2 rounded-md focus:outline-none">

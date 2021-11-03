@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300&family=Bitter:wght@100;200;300;400;600&family=Roboto:wght@100;300;400;500&display=swap');
 @tailwind base;
 @tailwind components;
 
@@ -7,11 +8,6 @@
 
     .has-tooltip:hover .tooltip {
     @apply visible z-50;
-    }
-
-    @font-face {
-        font-family: 'helvetica';
-        src: local('helvetica'), url(fonts/helvetica-light-587ebe5a59211.ttf) format('ttf');
     }
 
 @tailwind utilities;
