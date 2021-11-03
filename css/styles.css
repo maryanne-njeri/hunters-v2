@@ -373,7 +373,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Helvetica, Roboto, Arial, sans-serif;
   /* 1 */
   line-height: 1.5;
   /* 2 */
@@ -646,6 +646,12 @@ html {
 .has-tooltip:hover .tooltip {
   visibility: visible;
   z-index: 50;
+}
+
+@font-face {
+  font-family: 'helvetica';
+
+  src: local('helvetica'), url(fonts/helvetica-light-587ebe5a59211.ttf) format('ttf');
 }
 
 .sr-only {
@@ -22384,7 +22390,7 @@ html {
 }
 
 .font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Helvetica, Roboto, Arial, sans-serif;
 }
 
 .font-serif {
@@ -53964,7 +53970,7 @@ html {
   }
 
   .sm\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, Roboto, Arial, sans-serif;
   }
 
   .sm\:font-serif {
@@ -85192,7 +85198,7 @@ html {
   }
 
   .md\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, Roboto, Arial, sans-serif;
   }
 
   .md\:font-serif {
@@ -116420,7 +116426,7 @@ html {
   }
 
   .lg\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, Roboto, Arial, sans-serif;
   }
 
   .lg\:font-serif {
@@ -147648,7 +147654,7 @@ html {
   }
 
   .xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, Roboto, Arial, sans-serif;
   }
 
   .xl\:font-serif {
@@ -178876,7 +178882,7 @@ html {
   }
 
   .\32xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Helvetica, Roboto, Arial, sans-serif;
   }
 
   .\32xl\:font-serif {
