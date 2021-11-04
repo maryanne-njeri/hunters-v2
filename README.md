@@ -42,6 +42,7 @@
 
 - [x] Responsive header
 - [x] Responsive hero header
+- [x] Our services
 - [ ] Team section
 - [ ] Our story
 - [ ] About us
