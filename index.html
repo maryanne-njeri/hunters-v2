@@ -82,7 +82,7 @@
             <div class="w-full md:w-2/5 text-gray-700 pt-6 md:pt-0">
                 <div x-data="{ expandUX: false, expandDesign: false, expandDev: false }" class="space-y-6">
                     <div>
-                        <div @click="expandUX = ! expandUX" class="flex items-center cursor-pointer space-x-2">
+                        <div @click="expandUX = ! expandUX" class="inline-flex md:flex items-center cursor-pointer space-x-2 focus:outline-none">
                             <h2 class="text-xl md:text-3xl font-bitter font-medium">User experience</h2>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -91,7 +91,7 @@
                             </svg>
                         </div>
                     
-                        <div x-show="expandUX" x-collapse="" style="height: 0px; overflow: hidden;">
+                        <div x-show="expandUX" x-collapse="" x-collapse.duration.500ms style="height: 0px; overflow: hidden;">
                             <div class="md:text-lg font-sans md:leading-5 xl:leading-6 font-normal py-4">
                                 Reprehenderit eu excepteur ullamco esse cillum reprehenderit exercitation labore non. Dolore dolore ea
                                 dolore veniam sint in sint ex Lorem ipsum. Sint laborum deserunt deserunt amet voluptate cillum deserunt.
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div>
-                        <div @click="expandDesign = ! expandDesign" class="flex items-center cursor-pointer space-x-2">
+                        <div @click="expandDesign = ! expandDesign" class="inline-flex md:flex items-center cursor-pointer space-x-2 focus:outline-none">
                             <h2 class="text-xl md:text-3xl font-bitter font-medium">Web design</h2>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -108,7 +108,7 @@
                             </svg>
                         </div>
                     
-                        <div x-show="expandDesign" x-collapse="" style="height: 0px; overflow: hidden;">
+                        <div x-show="expandDesign" x-collapse="" x-collapse.duration.500ms style="height: 0px; overflow: hidden;">
                             <div class="md:text-lg font-sans md:leading-5 xl:leading-6 font-normal py-4">
                                 Reprehenderit eu excepteur ullamco esse cillum reprehenderit exercitation labore non. Dolore dolore ea
                                 dolore veniam sint in sint ex Lorem ipsum. Sint laborum deserunt deserunt amet voluptate cillum deserunt.
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                     <div>
-                        <div @click="expandDev = ! expandDev" class="flex items-center cursor-pointer space-x-2">
+                        <div @click="expandDev = ! expandDev" class="inline-flex md:flex items-center cursor-pointer space-x-2 focus:outline-none">
                             <h2 class="text-xl md:text-3xl font-bitter font-normal">Software development</h2>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -125,7 +125,7 @@
                             </svg>
                         </div>
                     
-                        <div x-show="expandDev" x-collapse="" style="height: 0px; overflow: hidden;">
+                        <div x-show="expandDev" x-collapse="" x-collapse.duration.500ms style="height: 0px; overflow: hidden;">
                             <div class="md:text-lg font-sans md:leading-5 xl:leading-6 font-normal py-4">
                                 Reprehenderit eu excepteur ullamco esse cillum reprehenderit exercitation labore non. Dolore dolore ea
                                 dolore veniam sint in sint ex Lorem ipsum. Sint laborum deserunt deserunt amet voluptate cillum deserunt.
