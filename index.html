@@ -7,6 +7,11 @@
     <title>hunter-v2</title>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <!-- Alpine Plugins -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Alpine Core -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <!-- x-data sets properties' states. False by default -->
 <body class="font-roboto antialiased" x-data="{ navbarOpen : false, scrolledFromTop : false }"
@@ -57,7 +62,7 @@
         <div class="flex items-center px-4 md:px-16 text-white h-96">
             <div class="space-y-6 text-left">
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold sm:w-2/3 md:w-3/4 font-averia-serif">We create world-class software products.</h2>
-                <p class="text-sm sm:text-md tracking-wide md:w-3/5 font-medium md:font-light font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi dolores, odit aperiam dicta distinctio. Aliquam deserunt labore dolor provident!</p>
+                <p class="text-sm sm:text-md tracking-wider md:w-3/5 font-medium md:font-light font-averia-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi dolores, odit aperiam dicta distinctio. Aliquam deserunt labore dolor provident!</p>
                 <button class="
                     text-sm sm:text-large bg-white text-gray-700 font-semibold hover:bg-gray-700 
                     hover:text-white transition duration-200 px-4 py-2 rounded-md focus:outline-none">
@@ -67,50 +72,70 @@
         </div>
     </div>
 
-    <!-- What we offer -->
-    <div class="pt-16 pb-12 px-4 md:px-16 w-full">
-        <div class="flex flex-col-reverse md:flex-row md:flex w-full items-center justify-between">
-            <div class="w-full md:w-1/2 space-y-6 pt-12" x-data="{openService : false}">
-                <div class="flex items-center space-x-2">
-                    <h2 class="text-xl md:text-2xl">User experience</h2>
-                    <button @click="openService = ! openService">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 font-thin text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <h2 class="text-xl md:text-2xl">Web design</h2>
-                    <button @click="openService = ! openService">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 font-thin text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="">
-                        <div class="flex items-center space-x-2">
-                            <h2 class="text-xl md:text-2xl">Software Development</h2>
-                            <button @click="openService = ! openService">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 font-thin text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                        </div>
-                        <p x-show="openService">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ut maiores eveniet laboriosam voluptatibus ipsa, temporibus dolorem ipsam magnam, fuga hic quis nisi. Neque, fugiat. Adipisci consequatur recusandae harum quos.</p>
-                    </div>
+    <!-- Our services -->
+    <div class="flex items-center justify-center pt-16 pb-12 px-4 md:px-16 w-full">
+        <div class="md:flex w-full items-start justify-center md:space-x-64">
+            <div class="space-y-3 sm:space-y-6 w-full md:w-3/5">
+                <h2 class="text-lg md:text-2xl font-extrabold md:font-bold font-bitter text-gray-700">We craft cutting edge web design, software products and conduct detailed user experience.</h2>
+                <p class="hidden md:block md:text-lg font-sans md:leading-5 xl:leading-6 font-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod dolores rem illum cum accusantium error sint unde fugiat dolorem aliquam quia distinctio excepturi eum explicabo illo dolore, amet vero non!</p>
             </div>
-            <div class="space-y-3 sm:space-y-6 w-full md:w-1/2">
-                <h2 class="text-xl sm:text-4xl font-bold font-roboto">We craft cutting edge web design, software products and conduct detailed user experience.</h2>
-                <p class="text-sm sm:text-md tracking-wide font-normal font-roboto pb-6 md:pb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod dolores rem illum cum accusantium error sint unde fugiat dolorem aliquam quia distinctio excepturi eum explicabo illo dolore, amet vero non!</p>
-                <hr class="text-gray-900 md:hidden">
+            <div class="w-full md:w-2/5 text-gray-700 pt-6 md:pt-0">
+                <div x-data="{ expandUX: false, expandDesign: false, expandDev: false }" class="space-y-6">
+                    <div>
+                        <div @click="expandUX = ! expandUX" class="flex items-center cursor-pointer space-x-2">
+                            <h2 class="text-xl md:text-3xl font-bitter font-medium">User experience</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    
+                        <div x-show="expandUX" x-collapse="" style="height: 0px; overflow: hidden;">
+                            <div class="md:text-lg font-sans md:leading-5 xl:leading-6 font-normal py-4">
+                                Reprehenderit eu excepteur ullamco esse cillum reprehenderit exercitation labore non. Dolore dolore ea
+                                dolore veniam sint in sint ex Lorem ipsum. Sint laborum deserunt deserunt amet voluptate cillum deserunt.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div @click="expandDesign = ! expandDesign" class="flex items-center cursor-pointer space-x-2">
+                            <h2 class="text-xl md:text-3xl font-bitter font-medium">Web design</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    
+                        <div x-show="expandDesign" x-collapse="" style="height: 0px; overflow: hidden;">
+                            <div class="md:text-lg font-sans md:leading-5 xl:leading-6 font-normal py-4">
+                                Reprehenderit eu excepteur ullamco esse cillum reprehenderit exercitation labore non. Dolore dolore ea
+                                dolore veniam sint in sint ex Lorem ipsum. Sint laborum deserunt deserunt amet voluptate cillum deserunt.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div @click="expandDev = ! expandDev" class="flex items-center cursor-pointer space-x-2">
+                            <h2 class="text-xl md:text-3xl font-bitter font-normal">Software development</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    
+                        <div x-show="expandDev" x-collapse="" style="height: 0px; overflow: hidden;">
+                            <div class="md:text-lg font-sans md:leading-5 xl:leading-6 font-normal py-4">
+                                Reprehenderit eu excepteur ullamco esse cillum reprehenderit exercitation labore non. Dolore dolore ea
+                                dolore veniam sint in sint ex Lorem ipsum. Sint laborum deserunt deserunt amet voluptate cillum deserunt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>
